@@ -51,6 +51,13 @@ header {
 #logo img {
 	width: 400px;	/*画像幅*/
 	margin: 40px auto 40px;	/*ロゴの上と下に40pxスペースを空ける設定*/
+
+}
+
+#logo a{
+	color: #80ad45;
+	text-decoration: none;
+	font-size: 40px;
 }
 
 /*トップページのメイン画像
@@ -59,7 +66,11 @@ header {
 #mainimg img {
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 	margin-bottom: 40px;	/*下に空けるスペース*/
+	width: 500px;
+	height: 300px;
 }
+
+
 
 /*メニュー
 ---------------------------------------------------------------------------*/
@@ -270,4 +281,38 @@ body {
 ---------------------------------------------------------------------------*/
 .ws,.wl {width: 94%;}
 
+}
+
+/*profile-ページ
+---------------------------------------------------------------------------*/
+
+.profile-name {
+	font-size: 40px;
+	text-align: center;
+	
+}
+
+.video-container {
+  position: relative;
+}
+
+.left-text,
+.right-text {
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  /*color: white;*/
+  /* 任意のスタイルを追加 */
+}
+
+.left-text {
+  left: 25px;
+}
+
+.right-text {
+  right: 0;
+}
+
+a {
+  text-decoration: none;
 }
