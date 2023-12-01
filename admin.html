@@ -25,10 +25,10 @@
 <nav id="menubar">
 <ul>
 <li><a href="home.html">Home</a></li>
-<li><a href="profile.html">profile</a></li>
-<li><a href="about.html">book</a></li>
-<li><a href="gallery.html">photo</a></li>
-<li><a href="admin.html">admin</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="book.html">Book</a></li>
+<li><a href="movie.html">Movie</a></li>
+<li><a href="admin.html">Admin</a></li>
 </ul>
 </nav>
 </header>
@@ -37,7 +37,7 @@
 
 <section>
 
-<h2>GALLERY</h2>
+<h2>Admin</h2>
 
 <div class="list">
 <img src="images/sample1.jpg">
@@ -73,7 +73,64 @@
 
 </div>
 <!--/contents-->
-
+<div id="slide">
+    <div id="slide-in">
+        <div id="open-btn"><img src="images/open-btn.gif" width="20" height="20" /></div>
+        <h3 style="font-size: 10px;">いろはちゃんとお話してみませんか?</h3>
+        <div id="slide-contents">
+           <a href="https://www.nogizaka46.com/s/n46/live?ct=HANDSHAKE" target="_blank">
+           <img src="images/いろは広告.jpg" alt="" width="500" height="300">
+           
+        </a>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function() {
+    var slide = $('#slide');
+    var contents = $('#slide-contents');
+    //開くボタン
+    var openBtn = $('#open-btn img');
+    var btnOpenFlag = false;
+    var openFlag = false;
+    var panelSwitch = function() {
+        //閉じる
+        if (openFlag == true ) {
+            slide.stop().animate({'width' : '250px','height' : '30px'}, 500); 
+            openBtn.show();     //開くボタンにする
+        }
+        //開く
+        else if (openFlag == false) {
+            slide.stop().animate({'width' : '500px','height' : '300px'}, 500); 
+            openBtn.hide();     //閉じるボタンにする
+        }
+    };
+    //開くボタンクリックしたら
+    $('#open-btn').click(function(){
+        panelSwitch();
+        openFlag = !openFlag;
+        btnOpenFlag = true;
+    });
+    //画面下位置を取得
+    // var bottomPos = $(document).height() - $(window).height() - 500;
+    // $(window).scroll(function () {
+    //     if (!btnOpenFlag) {
+    //         if ($(this).scrollTop() >= bottomPos) {
+    //             if (openFlag == false) {
+    //                 panelSwitch();
+    //                 openFlag = true;
+    //             }
+    //         } else {
+    //             if (openFlag) {
+    //                 panelSwitch();
+    //                 openFlag = false;
+    //             }
+    //         }
+    //     }
+    // });
+});
+</script>
 <footer>
 <small>Copyright&copy; <a href="home.html">SAMPLE SITE</a> All Rights Reserved.</small>
 <span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>いろはのいろ　-奥田いろは応援サイト-</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="home.html">いろはのいろ</a></h1>
+<h2>-奥田いろは応援サイト-</h2>
+
+<nav id="menubar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="book.html">Book</a></li>
+<li><a href="movie.html">Movie</a></li>
+<li><a href="admin.html">Admin</a></li>
+</ul>
+</nav>
+</header>
+
+<div id="contents">
+
+<section>
+
+<h2>YouTube</h2>
+
+<div class="list">
+<iframe width="560" height="500" src="https://www.youtube.com/embed/f9qNf3rGcr4?si=JxkVRhmIj4CPbpo_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h4>乃木坂46 奥田いろは 柏駅前で路上ライブやってみた！</h4>
+<p>奥田いろはが初の路上ライブに挑戦！
+ギター片手に柏駅前で行わせていただきました♪
+ぜひご覧ください！</p>
+
+
+</div>
+<p class="more-btn">
+<a href="https://www.youtube.com/results?search_query=%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF%E3%80%80%E6%AD%8C" target=”_blank”>YouTubeで奥田いろはちゃんの動画をもっと見る！</a>
+</p>
+</section>
+<section>
+<div class="popup">
+    <div class="popup-banner">
+        <span class="popup-close">×</span>
+        <a href="https://www.nogizaka46.com/s/n46/live?ct=HANDSHAKE" target="_blank">
+           <img src="images/いろは広告.jpg" alt="" width="700" height="400">
+           
+        </a>
+    </div>
+</div>
+<script>
+//ポップアップ広告を取得
+const popup = document.querySelector('.popup')
+//ポップアップ広告の閉じるボタンを取得
+const popupClose = document.querySelector('.popup-close')
+//body要素を取得
+const body = document.body
+//表示位置を指定（下記はbody要素の真中辺り）
+const position = body.clientHeight / 2
+
+//スクロールされた場合の処理
+window.addEventListener('scroll', ()=>{
+    //スクロール位置を取得
+    let scrollY = window.scrollY
+    //ポップアップ広告の表示フラグを取得
+    let popupFlag = sessionStorage.getItem('open')
+    
+    //スクロール量が表示位置以上であれば
+    if(!popupFlag && position < scrollY){
+        //ポップアップ広告表示
+        popup.classList.add('open')
+        //ポップアップ広告の表示フラグを表示済みに設定
+        sessionStorage.setItem('open', true)
+    }
+    
+    //popupがopenのclassを持っていれば
+    if(popup.classList.contains('open')){
+        //bodyのスクロールバーを非表示
+        body.style.overflowY = 'hidden'
+    } else {
+        //bodyのスクロールバーを表示
+        body.style.overflowY = 'auto'
+    }
+});
+
+//ポップアップ広告の閉じるボタンがクリックされた場合の処理
+popupClose.addEventListener('click', ()=>{
+    //openのclassを削除
+    popup.classList.remove('open')
+    //bodyのスクロールバーを表示
+    body.style.overflowY = 'auto'
+})
+
+</script>
+<h2>TikTok</h2>
+<h3 id="">超・乃木坂スター誕生！【日テレ公式】より</h3>
+<div class="list">
+<div class="tiktok-container">
+      <!-- TikTok埋め込みコード -->
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogista_ntv/video/7306061863375080706" data-video-id="7306061863375080706" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogista_ntv" href="https://www.tiktok.com/@nogista_ntv?refer=embed">@nogista_ntv</a> 今夜25:29〜放送📺❤️ <a title="菅原咲月" target="_blank" href="https://www.tiktok.com/tag/%E8%8F%85%E5%8E%9F%E5%92%B2%E6%9C%88?refer=embed">#菅原咲月</a><a title="五百城茉央" target="_blank" href="https://www.tiktok.com/tag/%E4%BA%94%E7%99%BE%E5%9F%8E%E8%8C%89%E5%A4%AE?refer=embed">#五百城茉央</a><a title="奥田いろは" target="_blank" href="https://www.tiktok.com/tag/%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF?refer=embed">#奥田いろは</a> 高３トリオのお出かけに密着🚲☀️ <a title="さつまいろ" target="_blank" href="https://www.tiktok.com/tag/%E3%81%95%E3%81%A4%E3%81%BE%E3%81%84%E3%82%8D?refer=embed">#さつまいろ</a>が<a title="wacci" target="_blank" href="https://www.tiktok.com/tag/wacci?refer=embed">#wacci</a>の<a title="宝物" target="_blank" href="https://www.tiktok.com/tag/%E5%AE%9D%E7%89%A9?refer=embed">#宝物</a>をカバー！！ <a title="乃木坂スター誕生" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%82%E3%82%B9%E3%82%BF%E3%83%BC%E8%AA%95%E7%94%9F?refer=embed">#乃木坂スター誕生</a><a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a><a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> <a target="_blank" title="♬ オリジナル楽曲  - 超・乃木坂スター誕生！【日テレ公式】" href="https://www.tiktok.com/music/オリジナル楽曲-超-乃木坂スター誕生日テレ公式-7306061911006071553?refer=embed">♬ オリジナル楽曲  - 超・乃木坂スター誕生！【日テレ公式】</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogista_ntv/video/7303487615100030209" data-video-id="7303487615100030209" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogista_ntv" href="https://www.tiktok.com/@nogista_ntv?refer=embed">@nogista_ntv</a> 今夜25:29〜放送📺❤️ <a title="奥田いろは" target="_blank" href="https://www.tiktok.com/tag/%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF?refer=embed">#奥田いろは</a> が 映画 <a title="君の名は。" target="_blank" href="https://www.tiktok.com/tag/%E5%90%9B%E3%81%AE%E5%90%8D%E3%81%AF%E3%80%82?refer=embed">#君の名は。</a> <a title="上白石萌音" target="_blank" href="https://www.tiktok.com/tag/%E4%B8%8A%E7%99%BD%E7%9F%B3%E8%90%8C%E9%9F%B3?refer=embed">#上白石萌音</a> の <a title="なんでもないや" target="_blank" href="https://www.tiktok.com/tag/%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84?refer=embed">#なんでもないや</a>(movie ver.)を熱唱🕰🎞 <a title="乃木坂スター誕生" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%82%E3%82%B9%E3%82%BF%E3%83%BC%E8%AA%95%E7%94%9F?refer=embed">#乃木坂スター誕生</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a>  <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> <a target="_blank" title="♬ オリジナル楽曲  - 超・乃木坂スター誕生！【日テレ公式】" href="https://www.tiktok.com/music/オリジナル楽曲-超-乃木坂スター誕生日テレ公式-7303487656418708226?refer=embed">♬ オリジナル楽曲  - 超・乃木坂スター誕生！【日テレ公式】</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogista_ntv/video/7176188216758832386" data-video-id="7176188216758832386" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogista_ntv" href="https://www.tiktok.com/@nogista_ntv?refer=embed">@nogista_ntv</a> 今夜25:29〜放送📺❤️  <a title="奥田いろは" target="_blank" href="https://www.tiktok.com/tag/%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF?refer=embed">#奥田いろは</a> が <a title="saucydog" target="_blank" href="https://www.tiktok.com/tag/saucydog?refer=embed">#saucydog</a> の <a title="いつか" target="_blank" href="https://www.tiktok.com/tag/%E3%81%84%E3%81%A4%E3%81%8B?refer=embed">#いつか</a> をカバー🏝 <a title="乃木坂スター誕生" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%82%E3%82%B9%E3%82%BF%E3%83%BC%E8%AA%95%E7%94%9F?refer=embed">#乃木坂スター誕生</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> <a target="_blank" title="♬ オリジナル楽曲 - 新・乃木坂スター誕生！【日テレ公式】 - 超・乃木坂スター誕生！【日テレ公式】" href="https://www.tiktok.com/music/オリジナル楽曲-新-乃木坂スター誕生日テレ公式-7176188216721115906?refer=embed">♬ オリジナル楽曲 - 新・乃木坂スター誕生！【日テレ公式】 - 超・乃木坂スター誕生！【日テレ公式】</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+<h3 id="">nogizaka46_officialより</h3>
+<div class="tiktok-container">
+      <!-- TikTok埋め込みコード -->
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7180931184635940097" data-video-id="7180931184635940097" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> 今回はみくが作ってくれたエフェクトを3人で使ってみました〜 エフェクトが2人にしか付かなくていろはと取り合ってみました☺️ サンタの帽子すごく可愛いし、みくの手書きのMerry Christmasもカラフルで素敵✨皆さん是非使ってみてくださいね〜by奈央 <a title="乃木坂46がエフェクト作ってみた" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246%E3%81%8C%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F?refer=embed">#乃木坂46がエフェクト作ってみた</a> <a title="17分間" target="_blank" href="https://www.tiktok.com/tag/17%E5%88%86%E9%96%93?refer=embed">#17分間</a> <a title="ここにはないもの" target="_blank" href="https://www.tiktok.com/tag/%E3%81%93%E3%81%93%E3%81%AB%E3%81%AF%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE?refer=embed">#ここにはないもの</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a target="_blank" title="♬ 17funkan - Nogizaka46" href="https://www.tiktok.com/music/17funkan-7171731230767974402?refer=embed">♬ 17funkan - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7175450740868058370" data-video-id="7175450740868058370" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> 楽曲「<a title="17分間" target="_blank" href="https://www.tiktok.com/tag/17%E5%88%86%E9%96%93?refer=embed">#17分間</a>」🕰 TikTokバージョンスペシャルムービー🎥Part5✨ <a title="乃木坂46がエフェクト作ってみた" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246%E3%81%8C%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F?refer=embed">#乃木坂46がエフェクト作ってみた</a> <a title="ここにはないもの" target="_blank" href="https://www.tiktok.com/tag/%E3%81%93%E3%81%93%E3%81%AB%E3%81%AF%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE?refer=embed">#ここにはないもの</a> <a target="_blank" title="♬ 17funkan - Nogizaka46" href="https://www.tiktok.com/music/17funkan-7171731230767974402?refer=embed">♬ 17funkan - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7175449932831280385" data-video-id="7175449932831280385" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> 楽曲「<a title="17分間" target="_blank" href="https://www.tiktok.com/tag/17%E5%88%86%E9%96%93?refer=embed">#17分間</a>」🕰 TikTokバージョンスペシャルムービー🎥Part7✨ <a title="乃木坂46がエフェクト作ってみた" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246%E3%81%8C%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F?refer=embed">#乃木坂46がエフェクト作ってみた</a> <a title="ここにはないもの" target="_blank" href="https://www.tiktok.com/tag/%E3%81%93%E3%81%93%E3%81%AB%E3%81%AF%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE?refer=embed">#ここにはないもの</a> <a target="_blank" title="♬ 17funkan - Nogizaka46" href="https://www.tiktok.com/music/17funkan-7171731230767974402?refer=embed">♬ 17funkan - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+<div class="tiktok-container">
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7175860844784405761" data-video-id="7175860844784405761" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> <a title="奥田いろは" target="_blank" href="https://www.tiktok.com/tag/%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF?refer=embed">#奥田いろは</a> です🦙 『17分間』聞いていただけましたか？ MVも公開されています〜！私はサビの歌詞に合わせた振り付けなので、覚えやすいと思います🎶ぜひ私たちと一緒に踊りましょう！byいろは  <a title="17分間" target="_blank" href="https://www.tiktok.com/tag/17%E5%88%86%E9%96%93?refer=embed">#17分間</a> <a title="ここにはないもの" target="_blank" href="https://www.tiktok.com/tag/%E3%81%93%E3%81%93%E3%81%AB%E3%81%AF%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE?refer=embed">#ここにはないもの</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a target="_blank" title="♬ 17funkan - Nogizaka46" href="https://www.tiktok.com/music/17funkan-7171731230767974402?refer=embed">♬ 17funkan - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7175450391109307649" data-video-id="7175450391109307649" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> 楽曲「<a title="17分間" target="_blank" href="https://www.tiktok.com/tag/17%E5%88%86%E9%96%93?refer=embed">#17分間</a>」🕰 TikTokバージョンスペシャルムービー🎥Part6✨ <a title="乃木坂46がエフェクト作ってみた" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246%E3%81%8C%E3%82%A8%E3%83%95%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F?refer=embed">#乃木坂46がエフェクト作ってみた</a> <a title="ここにはないもの" target="_blank" href="https://www.tiktok.com/tag/%E3%81%93%E3%81%93%E3%81%AB%E3%81%AF%E3%81%AA%E3%81%84%E3%82%82%E3%81%AE?refer=embed">#ここにはないもの</a> <a target="_blank" title="♬ 17funkan - Nogizaka46" href="https://www.tiktok.com/music/17funkan-7171731230767974402?refer=embed">♬ 17funkan - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@nogizaka46_official/video/7223312161450233095" data-video-id="7223312161450233095" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@nogizaka46_official" href="https://www.tiktok.com/@nogizaka46_official?refer=embed">@nogizaka46_official</a> みんな可愛いでしょ〜可愛いんですよ〜〜〜🥰🥰by瑛紗 <a title="乃木坂青春選手権" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%82%E9%9D%92%E6%98%A5%E9%81%B8%E6%89%8B%E6%A8%A9?refer=embed">#乃木坂青春選手権</a> <a title="心にもないこと" target="_blank" href="https://www.tiktok.com/tag/%E5%BF%83%E3%81%AB%E3%82%82%E3%81%AA%E3%81%84%E3%81%93%E3%81%A8?refer=embed">#心にもないこと</a>  <a title="人は夢を二度見る" target="_blank" href="https://www.tiktok.com/tag/%E4%BA%BA%E3%81%AF%E5%A4%A2%E3%82%92%E4%BA%8C%E5%BA%A6%E8%A6%8B%E3%82%8B?refer=embed">#人は夢を二度見る</a> <a title="5期生" target="_blank" href="https://www.tiktok.com/tag/5%E6%9C%9F%E7%94%9F?refer=embed">#5期生</a> <a title="乃木坂46" target="_blank" href="https://www.tiktok.com/tag/%E4%B9%83%E6%9C%A8%E5%9D%8246?refer=embed">#乃木坂46</a> <a target="_blank" title="♬ kokoronimonaikoto - Nogizaka46" href="https://www.tiktok.com/music/kokoronimonaikoto-7208854776472143874?refer=embed">♬ kokoronimonaikoto - Nogizaka46</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+<p class="more-btn">
+<a href="https://www.tiktok.com/search?q=%E5%A5%A5%E7%94%B0%E3%81%84%E3%82%8D%E3%81%AF&t=1701243095885" target=”_blank”>TikTokで奥田いろはちゃんの動画をもっと見る！</a>
+</p>
+</section>
+
+</div>
+<!--/contents-->
+<div id="slide">
+    <div id="slide-in">
+        <div id="open-btn"><img src="images/open-btn.gif" width="20" height="20" /></div>
+        <h3 style="font-size: 10px;">いろはちゃんとお話してみませんか?</h3>
+        <div id="slide-contents">
+           <a href="https://www.nogizaka46.com/s/n46/live?ct=HANDSHAKE" target="_blank">
+           <img src="images/いろは広告.jpg" alt="" width="500" height="300">
+           
+        </a>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(function() {
+    var slide = $('#slide');
+    var contents = $('#slide-contents');
+    //開くボタン
+    var openBtn = $('#open-btn img');
+    var btnOpenFlag = false;
+    var openFlag = false;
+    var panelSwitch = function() {
+        //閉じる
+        if (openFlag == true ) {
+            slide.stop().animate({'width' : '250px','height' : '30px'}, 500); 
+            openBtn.show();     //開くボタンにする
+        }
+        //開く
+        else if (openFlag == false) {
+            slide.stop().animate({'width' : '500px','height' : '300px'}, 500); 
+            openBtn.hide();     //閉じるボタンにする
+        }
+    };
+    //開くボタンクリックしたら
+    $('#open-btn').click(function(){
+        panelSwitch();
+        openFlag = !openFlag;
+        btnOpenFlag = true;
+    });
+    //画面下位置を取得
+    // var bottomPos = $(document).height() - $(window).height() - 500;
+    // $(window).scroll(function () {
+    //     if (!btnOpenFlag) {
+    //         if ($(this).scrollTop() >= bottomPos) {
+    //             if (openFlag == false) {
+    //                 panelSwitch();
+    //                 openFlag = true;
+    //             }
+    //         } else {
+    //             if (openFlag) {
+    //                 panelSwitch();
+    //                 openFlag = false;
+    //             }
+    //         }
+    //     }
+    // });
+});
+</script>
+<footer>
+<small>Copyright&copy; <a href="home.html">SAMPLE SITE</a> All Rights Reserved.</small>
+<span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
