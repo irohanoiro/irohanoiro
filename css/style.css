@@ -485,3 +485,23 @@ a.btn_10:not(:last-child) {
     cursor: pointer;
     background: url(../images/close-btn.gif);
 }
+/* 1120px以下の場合 */
+@media screen and (max-width: 1120px) {
+  .video-container {
+    margin-bottom: 20px;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 要素を中央に配置 */
+    text-align: center; /* テキストを中央揃え */
+  }
+
+  .left-text, .right-text {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: static; /* position: absolute; を打ち消す */
+  }
+}
