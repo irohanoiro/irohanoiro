@@ -533,3 +533,8 @@ a.btn_10:not(:last-child) {
     margin-bottom: 15px; /* 見やすさのために適切な余白を指定 */
   }
 }
+@media (max-width: 580px) {
+  footer {
+    padding-bottom: 40px; /* 余白のサイズを適宜調整してください */
+  }
+}
