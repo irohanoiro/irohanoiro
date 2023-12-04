@@ -555,7 +555,7 @@ a.btn_10:not(:last-child) {
 @media screen and (max-width: 580px) {
   #slide-contents img {
     width: 350px;
-    height: 200px;
+    height: 190px;
   }
 }
  
