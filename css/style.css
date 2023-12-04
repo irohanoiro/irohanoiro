@@ -505,3 +505,31 @@ a.btn_10:not(:last-child) {
     position: static; /* position: absolute; を打ち消す */
   }
 }
+@media (max-width: 580px) {
+    .all-btn_10 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+ 
+    a.btn_10:not(:last-child) {
+    margin-left:  auto;
+    margin-right:  auto;
+}
+   .all-btn_10 a {
+    margin-bottom: 10px; /* お好みの余白サイズに合わせて調整してください */
+}
+}
+/* 580px以下の場合にブロック要素を縦並びにする */
+@media (max-width: 580px) {
+  .tiktok-container blockquote {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* 見やすさのために適切な余白を指定 */
+  }
+  .tiktok-container {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px; /* 見やすさのために適切な余白を指定 */
+  }
+}
