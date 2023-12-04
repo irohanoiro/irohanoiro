@@ -92,18 +92,26 @@ $(function() {
     var openBtn = $('#open-btn img');
     var btnOpenFlag = false;
     var openFlag = false;
-    var panelSwitch = function() {
-        //閉じる
-        if (openFlag == true ) {
-            slide.stop().animate({'width' : '250px','height' : '30px'}, 500); 
-            openBtn.show();     //開くボタンにする
+  var panelSwitch = function() {
+    var screenWidth = window.innerWidth;
+    
+    // 開くか閉じるかのフラグに基づいて処理を行う
+    if (openFlag == true) {
+        if (screenWidth <= 580) {
+            slide.stop().animate({'width' : '250px', 'height' : '30px'}, 500);
+        } else {
+            slide.stop().animate({'width' : '250px', 'height' : '30px'}, 500);
         }
-        //開く
-        else if (openFlag == false) {
-            slide.stop().animate({'width' : '500px','height' : '300px'}, 500); 
-            openBtn.hide();     //閉じるボタンにする
+        openBtn.show(); // 開くボタンにする
+    } else if (openFlag == false) {
+        if (screenWidth <= 580) {
+            slide.stop().animate({'width' : '350px', 'height' : '200px'}, 500);
+        } else {
+            slide.stop().animate({'width' : '500px', 'height' : '300px'}, 500);
         }
-    };
+        openBtn.hide(); // 閉じるボタンにする
+    }
+};
     //開くボタンクリックしたら
     $('#open-btn').click(function(){
         panelSwitch();
