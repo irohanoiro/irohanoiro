@@ -446,6 +446,10 @@ a.btn_10:not(:last-child) {
     background-color: black;
     cursor: pointer;
 }
+ .popup-banner img {
+    width: 700px;
+    height: 400px;
+  }
 
 /* popup表示時に付加されるclass */
 .popup.open {
@@ -538,3 +542,10 @@ a.btn_10:not(:last-child) {
     padding-bottom: 40px; /* 余白のサイズを適宜調整してください */
   }
 }
+@media screen and (max-width: 580px) {
+  .popup-banner img {
+    width: 350px;
+    height: 200px;
+  }
+}
+ 
