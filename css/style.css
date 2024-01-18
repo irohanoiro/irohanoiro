@@ -559,3 +559,89 @@ a.btn_10:not(:last-child) {
   }
 }
  
+ table.schedule {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px auto 10px;
+    table-layout: fixed;
+    border: 1px solid #666;
+    background-color: #000;
+    font-family: 'IBM Plex Sans JP', sans-serif;
+    font-weight: 400;
+}
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.schedule thead th:nth-child(1) {
+    vertical-align: middle;
+    width: 50px;
+    color: #fff;
+    font-size: 1em;
+}
+.schedule thead th {
+    color: #fff;
+    padding: 4px 2px 4px;
+    background: #444;
+    font-weight: 400;
+    font-size: 65%;
+}
+.schedule th {
+}
+.schedule th, .schedule td {
+    border: 1px solid #666;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: bottom;
+    font-size: 100%;
+}
+.schedule .day {
+    background: #000;
+    display: block;
+    margin: 4px 0 0;
+    color: #eee;
+    font-size: 1.2em;
+}
+.schedule .day_saturday {
+    color: #6a8ffa;
+}
+.schedule .day_holiday {
+    color: #c00;
+}
+.schedule tbody th {
+    height: 3em;
+    vertical-align: middle;
+    padding: 0;
+    font-weight: 400;
+    color: #fff;
+    font-size: 0.9em;
+}
+.schedule tbody td {
+    vertical-align: middle;
+    color: #ffff66;
+}
+.schedule .kyuen {
+    border-bottom: 1px solid #000;
+    color: #999;
+    font-size: 80%;
+}
+.locate {
+    font-size: 125%;
+    font-weight: 800;
+    line-height: 1;
+    padding: 10px 0 8px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    color: #000;
+    border-top: 3px double #000;
+    border-bottom: 3px double #000;
+     text-align: center;
+}
