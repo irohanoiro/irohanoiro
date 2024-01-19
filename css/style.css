@@ -645,3 +645,37 @@ tr {
     border-bottom: 3px double #000;
      text-align: center;
 }
+.venue {
+    font-size: 125%;
+    text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.section-heading {
+  color: #333;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.empty-cell,
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+
+
+.event-name {
+  font-weight: bold;
+}
+
+
+
