@@ -676,6 +676,128 @@ th, td {
 .event-name {
   font-weight: bold;
 }
-
-
+@media (max-width: 768px) {
+  /* 枠 */
+  table.schedule {
+    width: 90%;
+    margin: 15px auto 10px;
+    border: none;
+    border-top: 1px solid #666;
+    border-left: 1px solid #666;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  /* 左のグレー部分 */
+  .schedule thead {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 25%;
+    flex: 1 0 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+  }
+  .schedule thead tr {}
+  /* 左のグレー部分ひとつひとつ */
+  .schedule thead th {
+    padding: 0;
+    height: 30px;
+  }
+  /* 月 */
+  .schedule thead th:nth-child(1) {
+    height: 30px;
+    width: auto;
+  }
+  .schedule thead td {
+    width: auto;
+    padding: 0;
+    height: 30px;
+  }
+  /* 右の無色部分 */
+  .schedule tbody {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 75%;
+    flex: 1 0 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  /* 時刻 */
+  .schedule tbody th {
+    width: auto;
+    padding: 0;
+    height: 30px;
+  }
+  /* 星 */
+  .schedule tbody td {
+    width: auto;
+    padding: 0;
+    height: 30px;
+  }
+  .schedule tr {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%
+  }
+  .schedule th, .schedule td {
+    height: 40px;
+    border-left: none;
+    border-top: none;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .schedule caption {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+  }
+  /* 曜日 */
+  .schedule .day {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    display: block;
+    margin: 0 10px 0 0
+  }
+  /* 日付 */
+  .schedule .date {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    display: block;
+    margin: 0 10px;
+    padding: 0;
+  }
+  /* 休演 */
+  .schedule .kyuen {
+    border-top: none;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #666;
+  }
+  .schedule .kyuen2 {
+    border-top: none;
+    border-left: 1px solid #000;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+  }
+}
 
