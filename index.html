@@ -13,6 +13,44 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+<style type="text/css">
+#photo {
+    border-radius: 30px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+		
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo img {
+    width: 500px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+</style>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var setImg = '#photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
 </head>
 
 <body>
@@ -33,7 +71,18 @@
 <li><a href="romeoandjuliet.html">Romeo and Juliet</a></li>
 </ul>
 </nav>
-<aside id="mainimg"><img src="images/IMG_5248 (1).JPG" alt=""></aside>
+<div id="photo">
+<img src="images/IMG_5248 (1).JPG" width="500" height="300" alt="">
+<img src="images/S__39370756.jpg" width="500" height="300" alt="">
+<img src="images/IMG_8718.JPG" width="500" height="300" alt="">
+<img src="images/IMG_8714.JPG" width="500" height="300" alt="">
+<img src="images/IMG_2657.JPG" width="500" height="300" alt="">
+<img src="images/IMG_6689.JPG" width="500" height="300" alt="">
+<img src="images/okuda1.jpg" width="500" height="300" alt="">
+</div>
+
+<!--<aside id="mainimg"><img src="images/IMG_5248 (1).JPG" alt=""></aside>-->
+
 </header>
 
 
@@ -116,6 +165,9 @@ popupClose.addEventListener('click', ()=>{
 
 <dt>毎週月曜</dt>
 <dd><a href="https://www.ntv.co.jp/newnogistar/"  target="_blank">超・乃木坂スター誕生　25：29～25：59 日本テレビ</a></dd>
+<dt>2023/1/25~27</dt>
+<dd><a href="https://www.nogizaka46.com/s/n46/page/underlive"  target="_blank">34thSGアンダーライブ in ぴあアリーナMM
+</a></dd>
 <dt>2023/2/04</dt>
 <dd><a href="https://www.nogizaka46.com/s/n46/live/34th_koaku?ima=3034&ct=HANDSHAKE"  target="_blank">
 オンライン　ミート&グリート</a></dd>
